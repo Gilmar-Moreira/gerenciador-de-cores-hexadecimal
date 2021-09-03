@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style media="screen">
+        *{
+            margin: 1%;padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height:100vh ;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 200px;
+            background-color: white;
+            box-shadow: 0 0 3px #333;
+            border-radius: 10px;           
+
+        }
+        #colorPanel{
+            background: none;
+            outline: none;
+            border: none;
+            height: 40px;
+            width: 30px;
+            cursor: pointer;           
+        }
+        #btn{
+            outline: none;
+            border: none;
+            background: black;
+            color: white;
+            height: 60px;
+            width: 180px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        #box{
+            outline: none;
+            border: 2px solid #333;
+            border-radius: 50px;
+            height: 40px;
+            width: 120px;
+            padding: 0 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+      <strong>Click para selecionar a cor:</strong> <input type="color" id="colorPanel"><br>
+      <input type="button" id="btn" value="Click para gerar" onclick="myColor()">
+      <strong>Resultado em código:</strong> <input type="text" id="box">
+   </div>
+
+<script type="text/javascript">
+
+    function myColor(){
+        var color = document.getElementById('colorPanel'). value;
+        document.body.style.backgroundColor = color;
+        document.getElementById('box').value =color;
+
+    }
+</script>
+
+</body>
+</html>
