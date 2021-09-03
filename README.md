@@ -1,2 +1,2 @@
 # gerenciador-de-cores-hexadecimal
-Mini projeto de gerenciamento de cores com a função de gerar o código hexadecimal da cor
+Mini projeto de gerenciamento de cores com a função de gerar o código hexadecimal da cor, usando HTML + CSS + JAVASCRIPT
